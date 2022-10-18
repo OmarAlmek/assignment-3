@@ -64,7 +64,7 @@ void Linkedlist::sum(Node *h, int *sum){ //function to create a sum
     if (h == NULL)
         return;
     Linkedlist::sum(h->next, sum);
-    *sum += h->data * h->occur;
+    *sum += h->data;
 };
 int Linkedlist::get_sum(Node* h) {// function to return the sum using the previous sum function
     int sum = 0;
